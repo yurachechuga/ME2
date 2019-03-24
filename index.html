@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/loader.css">
+</head>
+<body>
+<header> JS_2019_02_19 - ME-2 </header>
+
+<div class="wrapper">
+    <div id="page-preloader" class="preloader">
+        <img  src="anim/VAyR.gif">
+    </div>
+    <div class="currencies">
+        <div>
+        <article class="currencies__Calculator">
+            <button id="btnCurrenciesCalculator"> Calculator</button>
+               <div id="currencies__Calculator-form" class="form">
+                        <div id="radioDiv">
+                            <input id="cur" value="CurrentDate" type="radio" name="curenciesType" > Текущий курс
+                            <input id="his" value="HistoryDate" type="radio" name="curenciesType"  >Курс на дату
+                            <input type="date" id="calcData">
+                        </div>
+                        <div>
+                            <p id="currencies__currentData"> </p>
+                            <p id="currencies__Curencies"> </p>
+                        </div>
+                        <div>
+                            <input id="currenciesValue" type="number">
+                            <select class="currenciesFirst">
+                                <option>USD</option>
+                                <option>EUR</option>
+                            </select>
+                            <input id="currenciesExchangeValue" type="number" readonly>
+                            <select class="currenciesExchengeValue">
+                                <option>EUR</option>
+                                <option>USD</option>
+                            </select>
+                        </div>
+                </div>
+       </article>
+        </div>
+        <div class="secondPart">
+            <article class="currencies__LatestRates">
+                <button id="btn__latestRates">Latest_Rates</button>
+                <div id="currencies__LatestRates-form"  class="form">
+                    <button id="btnLatestRates"> show latesCur.. </button>
+                </div>
+            </article>
+            <article class="currencies__HistoricalRates">
+                <button id="btn__historicalRates"> Historical rates </button>
+                <div id="currencies__HistoricalRates-form" class="form">
+                    <label> Choose the date </label>
+                    <input id="hist_date" type="date">
+                <div id="currencies__HistoricalRates-formData"> </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+
+</div>
+<footer>
+    <div>
+        Design by Chechuga Yura_(group - Dits_7)
+    </div>
+</footer>
+<script src="js/calculator.js"></script>
+<script src="js/latest_data.js"></script>
+<script src="js/history.js"></script>
+</body>
+</html>
